@@ -4,30 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyek 2 - SavWorks</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0b0c;
+      color: #f5f5f5;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* ===== Gambar Utama ===== */
+    .project-image {
+      width: 100%;
+      height: 100vh; /* memenuhi layar penuh */
+      object-fit: cover;
+      display: block;
+      filter: brightness(85%);
+      box-shadow: 0 0 30px rgba(179, 136, 255, 0.25);
+    }
+
+    /* ===== Deskripsi ===== */
+    .description {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(169, 112, 255, 0.08);
+      backdrop-filter: blur(10px);
+      color: #ccc;
+      font-weight: 300;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .description:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(169, 112, 255, 0.2);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 60px;
+      color: #b388ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #d1b3ff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Sav<span>Works</span></div>
-    <nav>
-      <ul>
-        <li><a href="index.html#about">Tentang</a></li>
-        <li><a href="index.html#projects">Proyek</a></li>
-        <li><a href="index.html#contact">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+  <img src="https://github.com/SAV-NA/Portfolio2/blob/main/image/2.png?raw=true" alt="Proyek 2" class="project-image">
 
-  <section class="project-page">
-    <img src="https://github.com/SAV-NA/Portfolio2/blob/main/image/2.png?raw=true" alt="Proyek 2">
-    <h2>Proyek 1: Desain Visual Aesthetic</h2>
+  <div class="description">
+    <h2>Proyek 2 – Desain Visual Elegan</h2>
     <p>
-      Sebuah karya desain yang menggabungkan nuansa gelap dengan pencahayaan lembut, 
-      menampilkan keseimbangan antara keanggunan dan ketenangan.  
-      Setiap elemen disusun dengan harmoni agar menciptakan kesan profesional dan misterius.
+      Karya ini menggambarkan keseimbangan antara kesederhanaan dan keindahan.
+      Menggunakan palet warna gelap yang lembut serta pencahayaan halus untuk menciptakan kesan misterius namun profesional.
+      Dibuat dengan prinsip minimalisme, setiap detail diatur untuk menonjolkan fokus utama karya.
     </p>
-    <a href="index.html#projects" class="back-btn">← Kembali</a>
-  </section>
+  </div>
+
+  <a href="index.html" class="back-link">← Kembali ke Portofolio</a>
 </body>
 </html>
-
