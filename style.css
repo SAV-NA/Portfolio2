@@ -95,6 +95,60 @@ nav ul li a:hover {
 }
 
 /* =======================
-   ABOUT
+   CONTACT FORM
 ======================= */
-.about
+.contact {
+  padding: 120px 10%;
+  text-align: center;
+  background: linear-gradient(180deg, #0b0b0c 0%, #151515 100%);
+}
+
+.section-title {
+  color: #b388ff;
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  background: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  color: #f2f2f2;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #b388ff;
+  box-shadow: 0 0 12px rgba(179, 136, 255, 0.3);
+}
+
+.send {
+  background: #b388ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send:hover {
+  background: #9c6aff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(179, 136, 255, 0.3);
+}
