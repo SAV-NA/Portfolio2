@@ -93,7 +93,21 @@ nav ul li a:hover {
   margin: 10px auto 0;
   font-weight: 300;
 }
-
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
 /* =======================
    CONTACT FORM
 ======================= */
